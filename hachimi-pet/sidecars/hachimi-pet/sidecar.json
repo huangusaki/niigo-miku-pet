@@ -1,0 +1,5 @@
+{
+  "command": "node",
+  "args": ["entry.mjs"],
+  "restart_policy": "on-failure"
+}

@@ -1,0 +1,770 @@
+{
+ "units": {
+  "S": 0.168,
+  "X0": 685.0,
+  "FEET": 1399.0,
+  "DS": 0.65,
+  "featDS": 1
+ },
+ "pivots": {
+  "body": [
+   128.0,
+   256.0
+  ],
+  "waist": [
+   130.52,
+   188.63
+  ],
+  "neck": [
+   130.52,
+   145.62
+  ],
+  "armNear": [
+   109.02,
+   166.12
+  ],
+  "armFar": [
+   147.66,
+   165.78
+  ],
+  "legBack": [
+   116.24,
+   195.69
+  ],
+  "legFront": [
+   139.76,
+   195.69
+  ],
+  "tail": [
+   93.56,
+   199.05
+  ],
+  "finNear": [
+   81.85,
+   63.29
+  ],
+  "finFar": [
+   174.3,
+   62.09
+  ],
+  "ahoge": [
+   130.52,
+   31.05
+  ],
+  "head": [
+   131.19,
+   108.33
+  ],
+  "chestStrap": [
+   128.59,
+   162.17
+  ]
+ },
+ "parts": [
+  {
+   "id": "hair_back",
+   "tex": "hair_back",
+   "z": 1.0,
+   "parent": "hairSway",
+   "grid": [
+    10,
+    14
+   ],
+   "box": [
+    20.65,
+    28.86,
+    214.37,
+    229.49
+   ]
+  },
+  {
+   "id": "tail",
+   "tex": "tail",
+   "z": 1.5,
+   "parent": "tailBend",
+   "grid": [
+    4,
+    2
+   ],
+   "box": [
+    126.0,
+    126.0,
+    4.0,
+    4.0
+   ]
+  },
+  {
+   "id": "hair_back_curl",
+   "tex": "hair_back_curl",
+   "z": 1.75,
+   "parent": "hairSway",
+   "grid": [
+    2,
+    2
+   ],
+   "box": [
+    126.0,
+    126.0,
+    4.0,
+    4.0
+   ]
+  },
+  {
+   "id": "leg_front",
+   "tex": "leg_front",
+   "z": 3.0,
+   "parent": "legFront",
+   "grid": [
+    3,
+    10
+   ],
+   "box": [
+    129.18,
+    180.9,
+    21.67,
+    75.26
+   ]
+  },
+  {
+   "id": "leg_back",
+   "tex": "leg_back",
+   "z": 4.0,
+   "parent": "legBack",
+   "grid": [
+    3,
+    10
+   ],
+   "box": [
+    104.48,
+    180.57,
+    24.19,
+    76.1
+   ]
+  },
+  {
+   "id": "skirt_shadow",
+   "tex": "skirt_shadow",
+   "z": 4.2,
+   "parent": "skirt",
+   "grid": [
+    8,
+    6
+   ],
+   "box": [
+    86.67,
+    207.78,
+    83.16,
+    20.33
+   ],
+   "src": "tex/skirt_shadow.png",
+   "blend": "multiply"
+  },
+  {
+   "id": "arm_far",
+   "tex": "arm_far",
+   "z": 4.5,
+   "parent": "armFar",
+   "grid": [
+    3,
+    5
+   ],
+   "box": [
+    140.77,
+    156.04,
+    25.87,
+    40.49
+   ]
+  },
+  {
+   "id": "torso_up",
+   "tex": "torso_up",
+   "z": 5.0,
+   "parent": "body",
+   "grid": [
+    6,
+    6
+   ],
+   "box": [
+    102.13,
+    143.94,
+    52.92,
+    52.25
+   ]
+  },
+  {
+   "id": "hair_front_right",
+   "tex": "hair_front_right",
+   "z": 5.05,
+   "parent": "hairSway",
+   "grid": [
+    2,
+    2
+   ],
+   "box": [
+    126.0,
+    126.0,
+    4.0,
+    4.0
+   ]
+  },
+  {
+   "id": "arm_far_end_front",
+   "tex": "arm_far_end_front",
+   "z": 5.1,
+   "parent": "armFar",
+   "grid": [
+    2,
+    2
+   ],
+   "box": [
+    126.0,
+    126.0,
+    4.0,
+    4.0
+   ]
+  },
+  {
+   "id": "skirt",
+   "tex": "skirt",
+   "z": 5.2,
+   "parent": "skirt",
+   "grid": [
+    8,
+    6
+   ],
+   "box": [
+    88.18,
+    181.58,
+    79.97,
+    41.16
+   ]
+  },
+  {
+   "id": "skirt_sit",
+   "tex": "skirt_sit",
+   "z": 5.3,
+   "parent": "skirtSit",
+   "grid": [
+    8,
+    4
+   ],
+   "box": [
+    69.87,
+    184.77,
+    115.58,
+    56.95
+   ]
+  },
+  {
+   "id": "hair_front_left",
+   "tex": "hair_front_left",
+   "z": 5.4,
+   "parent": "hairSway",
+   "grid": [
+    2,
+    2
+   ],
+   "box": [
+    126.0,
+    126.0,
+    4.0,
+    4.0
+   ]
+  },
+  {
+   "id": "waist_bow_front",
+   "tex": "waist_bow_front",
+   "z": 5.5,
+   "parent": "skirt",
+   "grid": [
+    2,
+    2
+   ],
+   "box": [
+    126.0,
+    126.0,
+    4.0,
+    4.0
+   ]
+  },
+  {
+   "id": "waist_bow_sit_front",
+   "tex": "waist_bow_sit_front",
+   "z": 5.55,
+   "parent": "skirtSit",
+   "grid": [
+    2,
+    2
+   ],
+   "box": [
+    126.0,
+    126.0,
+    4.0,
+    4.0
+   ]
+  },
+  {
+   "id": "arm_near",
+   "tex": "arm_near",
+   "z": 6.0,
+   "parent": "armNear",
+   "grid": [
+    4,
+    6
+   ],
+   "box": [
+    84.99,
+    161.92,
+    29.06,
+    40.32
+   ]
+  },
+  {
+   "id": "chest_strap",
+   "tex": "chest_strap",
+   "z": 6.5,
+   "parent": "chestStrap",
+   "grid": [
+    6,
+    3
+   ],
+   "box": [
+    102.13,
+    155.2,
+    52.92,
+    13.94
+   ]
+  },
+  {
+   "id": "fin_far",
+   "tex": "fin_far",
+   "z": 7.0,
+   "parent": "finFar",
+   "grid": [
+    4,
+    6
+   ],
+   "box": [
+    167.98,
+    43.82,
+    33.26,
+    99.79
+   ]
+  },
+  {
+   "id": "sidelocks",
+   "tex": "sidelocks",
+   "z": 7.5,
+   "parent": "bangsSway",
+   "grid": [
+    6,
+    6
+   ],
+   "box": [
+    85.66,
+    119.25,
+    82.82,
+    45.19
+   ]
+  },
+  {
+   "id": "face",
+   "tex": "face",
+   "z": 8.0,
+   "parent": "headMid",
+   "grid": [
+    6,
+    6
+   ],
+   "box": [
+    86.67,
+    50.37,
+    87.02,
+    95.59
+   ]
+  },
+  {
+   "id": "eye_creases",
+   "tex": "eye_creases",
+   "z": 8.5,
+   "parent": "headFeat",
+   "grid": [
+    4,
+    2
+   ],
+   "box": [
+    101.46,
+    107.15,
+    58.13,
+    3.02
+   ]
+  },
+  {
+   "id": "brows",
+   "tex": "brows",
+   "z": 8.6,
+   "parent": "headFeat",
+   "grid": [
+    12,
+    2
+   ],
+   "box": [
+    98.94,
+    95.73,
+    63.34,
+    4.54
+   ]
+  },
+  {
+   "id": "fin_near",
+   "tex": "fin_near",
+   "z": 11.0,
+   "parent": "finNear",
+   "grid": [
+    4,
+    6
+   ],
+   "box": [
+    53.24,
+    44.99,
+    34.44,
+    99.12
+   ]
+  },
+  {
+   "id": "headdress",
+   "tex": "headdress",
+   "z": 12.5,
+   "parent": "headMid",
+   "grid": [
+    2,
+    2
+   ],
+   "box": [
+    126.0,
+    126.0,
+    4.0,
+    4.0
+   ]
+  },
+  {
+   "id": "bangs",
+   "tex": "bangs",
+   "z": 13.0,
+   "parent": "bangsSway",
+   "grid": [
+    8,
+    10
+   ],
+   "box": [
+    69.87,
+    28.7,
+    115.08,
+    120.46
+   ]
+  },
+  {
+   "id": "bow",
+   "tex": "bow",
+   "z": 13.8,
+   "parent": "headMid",
+   "grid": [
+    2,
+    2
+   ],
+   "box": [
+    126.0,
+    126.0,
+    4.0,
+    4.0
+   ]
+  },
+  {
+   "id": "ahoge",
+   "tex": "ahoge",
+   "z": 14.0,
+   "parent": "ahoge",
+   "grid": [
+    2,
+    2
+   ],
+   "box": [
+    126.0,
+    126.0,
+    4.0,
+    4.0
+   ]
+  }
+ ],
+ "feat": {
+  "eyes": {
+   "eyeL": {
+    "lash": [
+     488,
+     527,
+     662,
+     569
+    ],
+    "ball": [
+     530,
+     540,
+     650,
+     620
+    ],
+    "iris": [
+     535,
+     538,
+     639,
+     635
+    ],
+    "rim": [
+     530,
+     540,
+     650,
+     620
+    ],
+    "lidFit": [
+     0.002087363364257595,
+     -2.4272714617900712,
+     1245.2959882890414
+    ],
+    "rimFit": [
+     -0.0060948496163798355,
+     7.257317918570916,
+     -1542.7047629267804
+    ]
+   },
+   "eyeR": {
+    "lash": [
+     747,
+     527,
+     916,
+     569
+    ],
+    "ball": [
+     758,
+     539,
+     877,
+     620
+    ],
+    "iris": [
+     768,
+     538,
+     872,
+     635
+    ],
+    "rim": [
+     758,
+     539,
+     877,
+     620
+    ],
+    "lidFit": [
+     0.003155521482892206,
+     -5.187512451827513,
+     2671.3598688410275
+    ],
+    "rimFit": [
+     -0.00654823164554062,
+     10.586926291581321,
+     -3661.2158196241585
+    ]
+   }
+  },
+  "sprites": {
+   "neutral_mouth": [
+    711,
+    666,
+    733,
+    676
+   ],
+   "happy_eyeL": [
+    505,
+    585,
+    653,
+    659
+   ],
+   "happy_eyeR": [
+    755,
+    585,
+    901,
+    658
+   ],
+   "happy_mouth": [
+    690,
+    675,
+    721,
+    689
+   ],
+   "sleep_eyeL": [
+    508,
+    579,
+    658,
+    621
+   ],
+   "sleep_eyeR": [
+    750,
+    579,
+    900,
+    621
+   ],
+   "sleep_mouth": [
+    711,
+    668,
+    733,
+    679
+   ],
+   "drag_eyeL": [
+    537,
+    559,
+    637,
+    626
+   ],
+   "drag_eyeR": [
+    771,
+    559,
+    871,
+    626
+   ],
+   "drag_mouth": [
+    688,
+    670,
+    727,
+    681
+   ],
+   "love_eyeL": [
+    484,
+    531,
+    657,
+    644
+   ],
+   "love_eyeR": [
+    752,
+    531,
+    917,
+    644
+   ],
+   "love_mouth": [
+    686,
+    668,
+    725,
+    687
+   ],
+   "dizzy_eyeL": [
+    482,
+    532,
+    661,
+    626
+   ],
+   "dizzy_eyeR": [
+    751,
+    536,
+    924,
+    626
+   ],
+   "dizzy_mouth": [
+    690,
+    672,
+    727,
+    683
+   ],
+   "surprised_eyeL": [
+    481,
+    516,
+    655,
+    624
+   ],
+   "surprised_eyeR": [
+    756,
+    517,
+    926,
+    624
+   ],
+   "surprised_mouth": [
+    705,
+    663,
+    725,
+    685
+   ]
+  },
+  "blush": [
+   254,
+   215,
+   218
+  ],
+  "skin": [
+   253,
+   240,
+   236
+  ]
+ },
+ "schemes": [
+  {
+   "id": "astral",
+   "brand": "Hachimi Astral",
+   "label": "星瞳紫",
+   "accent": "#8B7BF7",
+   "ready": true
+  },
+  {
+   "id": "sakura",
+   "brand": "Hachimi Sakura",
+   "label": "樱桃粉",
+   "accent": "#F472B6",
+   "ready": true
+  },
+  {
+   "id": "azure",
+   "brand": "Hachimi Azure",
+   "label": "苍穹蓝",
+   "accent": "#38BDF8",
+   "ready": true
+  },
+  {
+   "id": "emerald",
+   "brand": "Hachimi Emerald",
+   "label": "森灵翠",
+   "accent": "#34D399",
+   "ready": true
+  },
+  {
+   "id": "amber",
+   "brand": "Hachimi Amber",
+   "label": "流光金",
+   "accent": "#F59E0B",
+   "ready": true
+  },
+  {
+   "id": "crimson",
+   "brand": "Hachimi Crimson",
+   "label": "绯夜红",
+   "accent": "#FB7185",
+   "ready": true
+  },
+  {
+   "id": "arctic",
+   "brand": "Hachimi Arctic",
+   "label": "霜月银",
+   "accent": "#94A3B8",
+   "ready": true
+  },
+  {
+   "id": "obsidian",
+   "brand": "Hachimi Obsidian",
+   "label": "暗夜黑",
+   "accent": "#6366F1",
+   "ready": true
+  }
+ ],
+ "view": [
+  -24,
+  -8,
+  280,
+  272
+ ],
+ "outfits": [
+  {
+   "id": "maid"
+  }
+ ]
+}

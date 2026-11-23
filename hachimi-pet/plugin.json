@@ -1,0 +1,21 @@
+{
+  "name": "hachimi-pet",
+  "displayName": "Hachimi Pet HUD (哈基米)",
+  "version": "1.0.2",
+  "description": "Lightweight desktop pet HUD for Antigravity featuring an interactive Starry Catgirl mascot, multi-color subagent/Swarm sky-drop & sleep animations, context window ring, and real-time tok/s throughput.",
+  "logo": "assets/logo.png",
+  "author": {
+    "name": "hwt675217",
+    "url": "https://github.com/hwt675217"
+  },
+  "homepage": "https://github.com/hwt675217/hachimi-pet",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hwt675217/hachimi-pet.git"
+  },
+  "suggestedPrompts": [
+    "/hachimi 拉起哈基米桌面伴侣",
+    "调用 hachimi_pet_notify 让桌面上的猫娘跟我挥手打个招呼",
+    "开启蜂群模式并行开发，并在桌面实时观看各配色猫娘子代理的状态与睡眠待命"
+  ]
+}
