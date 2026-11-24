@@ -73,6 +73,31 @@ function loadSettings() {
     defaultWorkspace: sanitizeWorkspace(process.cwd()),
     savedProjects: initialProjects,
     selectedProject: PARENT_WORKSPACE,
+    pricing: {
+      currency: 'USD',
+      usdToCny: 1,
+      rules: [
+        { pattern: 'Gemini 4 Neon', inputPerM: 3.0, cachePerM: 0.15, outputPerM: 15.0 },
+        { pattern: 'Orchestrator Neon', inputPerM: 3.0, cachePerM: 0.15, outputPerM: 15.0 },
+        { pattern: 'Gemini 4 Hydrogen', inputPerM: 1.5, cachePerM: 0.075, outputPerM: 7.5 },
+        { pattern: 'Gemini 4 Carbon', inputPerM: 2.0, cachePerM: 0.1, outputPerM: 10.0 },
+        { pattern: 'Orchestrator (Carbon)', inputPerM: 2.0, cachePerM: 0.1, outputPerM: 10.0 },
+        { pattern: 'Gemini 3.8 Flash', inputPerM: 0.75, cachePerM: 0.075, outputPerM: 3.75 },
+        { pattern: 'Gemini 3.1 Pro', inputPerM: 2.0, cachePerM: 0.2, outputPerM: 12.0 },
+        { pattern: 'Gemini 3 Flash', inputPerM: 0.5, cachePerM: 0.05, outputPerM: 3.0 },
+        { pattern: 'Gemini Flash', inputPerM: 0.5, cachePerM: 0.05, outputPerM: 3.0 },
+        { pattern: 'Claude Opus 5.5', inputPerM: 4.0, cachePerM: 0.2, outputPerM: 20.0 },
+        { pattern: 'Claude Sonnet 5.5', inputPerM: 2.0, cachePerM: 0.1, outputPerM: 10.0 },
+        { pattern: 'Claude Haiku 5.5', inputPerM: 0.1, cachePerM: 0.01, outputPerM: 0.5 },
+        { pattern: 'Claude Opus', inputPerM: 5.0, cachePerM: 0.5, outputPerM: 25.0 },
+        { pattern: 'Claude Sonnet', inputPerM: 3.0, cachePerM: 0.3, outputPerM: 15.0 },
+        { pattern: 'GPT-6.2 Astra', inputPerM: 8.0, cachePerM: 0.4, outputPerM: 40.0 },
+        { pattern: 'GPT-6.2 Sol', inputPerM: 2.0, cachePerM: 0.1, outputPerM: 10.0 },
+        { pattern: 'GPT-5.2', inputPerM: 1.75, cachePerM: 0.175, outputPerM: 14.0 },
+        { pattern: 'GPT-5', inputPerM: 1.25, cachePerM: 0.125, outputPerM: 10.0 },
+        { pattern: 'default', inputPerM: 1.5, cachePerM: 0.075, outputPerM: 7.5 },
+      ],
+    },
   };
   try {
     if (fs.existsSync(SETTINGS_PATH)) {

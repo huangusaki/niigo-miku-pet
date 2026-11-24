@@ -166,7 +166,7 @@ export async function launchPet() {
 
   let pid = null;
   if (process.platform === 'win32') {
-    // On Windows, `Win32_Process.Create` escapes sandboxing Job Objects so `/hachimi` persists cleanly!
+    // Keep the detached pet running after the launcher exits.
     try {
       const esc = (s) => String(s).replace(/'/g, "''");
       const argStr = runtimeArgs.map((a) => `"${esc(a)}"`).join(' ');

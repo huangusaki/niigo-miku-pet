@@ -1,14 +1,10 @@
-﻿<div align="center">
-  <img src="./assets/logo.png" alt="Niigo Miku Pet" width="120" height="120" />
-  <h1>Niigo Miku Pet</h1>
-  <p>25 时初音未来 Antigravity 桌面伴侣插件</p>
-</div>
+﻿# Niigo Miku Pet
 
-<div align="center">
-  <img src="./assets/preview.png" alt="Preview" width="800" />
-</div>
+25 时初音未来 Antigravity 桌宠插件
 
 ## 安装
+
+已装过旧版的话，先退出桌宠，把插件目录里的 `hachimi-pet` 文件夹移到别处，再复制新版并重启 Antigravity。
 
 **Windows (PowerShell):**
 
@@ -27,7 +23,7 @@ cp -R /tmp/niigo-miku-pet/hachimi-pet ~/.gemini/config/plugins/hachimi-pet
 
 ## 使用
 
-- 在 Antigravity 对话框输入 **`/hachimi`** 唤醒桌宠
+- 在 Antigravity 对话框输入 **`/25miku`** 唤醒桌宠
 - 右键系统托盘图标切换配色、音效与漫步模式
 - 按 **`Alt + Shift + W`** 开关点击穿透
 

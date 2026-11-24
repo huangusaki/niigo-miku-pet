@@ -1,15 +1,6 @@
-<div align="center">
-  <img src="./assets/logo.png" alt="Hachimi Starry Catgirl Logo" width="128" height="128" />
-  <h1>Hachimi Pet (`hachimi-pet`)</h1>
-  <p><strong>轻量级 Antigravity 哈基米桌面伴侣插件 · Lightweight Starry Catgirl Desktop Pet HUD for Google Antigravity</strong></p>
+# Niigo Miku Pet (`hachimi-pet`)
 
-  <p>
-    <a href="#license"><img src="https://img.shields.io/badge/License-AGPL--3.0--or--later-blue.svg" alt="License: AGPL-3.0-or-later" /></a>
-    <img src="https://img.shields.io/badge/Antigravity-Plugin%20(Hooks%20%2B%20MCP%20%2B%20Skill)-purple.svg" alt="Antigravity Plugin" />
-    <img src="https://img.shields.io/badge/Zero%20Runtime%20Deps-~9.4%20MB-emerald.svg" alt="Zero Runtime Deps" />
-    <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg" alt="Cross Platform" />
-  </p>
-</div>
+轻量级 Antigravity 25 时初音未来桌宠插件
 
 ---
 
@@ -39,13 +30,13 @@
 
 **Windows (PowerShell):**
 ```powershell
-git clone https://github.com/hwt675217/hachimi-pet.git "$env:TEMP\hachimi-pet-repo"
+git clone https://github.com/huangusaki/niigo-miku-pet.git "$env:TEMP\hachimi-pet-repo"
 Copy-Item -Recurse -Force "$env:TEMP\hachimi-pet-repo\hachimi-pet" "$HOME\.gemini\config\plugins\hachimi-pet"
 ```
 
 **macOS / Linux:**
 ```bash
-git clone https://github.com/hwt675217/hachimi-pet.git /tmp/hachimi-pet-repo
+git clone https://github.com/huangusaki/niigo-miku-pet.git /tmp/hachimi-pet-repo
 mkdir -p ~/.gemini/config/plugins
 cp -R /tmp/hachimi-pet-repo/hachimi-pet ~/.gemini/config/plugins/hachimi-pet
 ```
@@ -66,7 +57,7 @@ agy plugin validate ~/.gemini/config/plugins/hachimi-pet --strict --json
 
 1. 在 Antigravity 对话框输入斜杠命令：
    ```text
-   /hachimi
+   /25miku
    ```
    桌宠将自动后台拉起（首次启动时若系统未安装全局 Electron，会自动将 `electron@33.3.1` 单次缓存至 `~/.hachimi-pet/runtime`）。
 2. 在 Antigravity 对话期间，模型也可按需调用 MCP 工具 `hachimi_pet_notify` 主动向你挥手、点头、跳舞或发送气泡消息，而**生命周期 Hooks 与增量日志监听器**会自动保持实时进度与指标同步，不会阻塞对话结束。
@@ -91,8 +82,8 @@ hachimi-pet/
 ├── rules/
 │   └── AGENTS.md               # 非阻塞伴侣行为准则
 ├── skills/
-│   └── hachimi/
-│       └── SKILL.md            # /hachimi 斜杠命令技能定义
+│   └── 25miku/
+│       └── SKILL.md            # /25miku 唤醒桌宠
 ├── sidecars/
 │   └── hachimi-pet/
 │       ├── sidecar.json        # Sidecar 守护进程配置
@@ -118,7 +109,7 @@ hachimi-pet/
 - **Node.js `>= 18`**（Antigravity Hooks / MCP Server 与纯 Node 桥接服务使用系统 `node`）
 - **Python 3**（可选但推荐：用于只读查询 Antigravity 会话 `.db` 精确上下文窗口统计）
 - **Windows 10 / 11**：**免下载、开箱即用**——直接复用系统自带 **Microsoft Edge WebView2** 运行时（仅附带 `0.83 MB` 原生宿主壳，彻底告别 269 MB Electron）
-- **macOS / Linux**：首次运行 `/hachimi` 时自动定位或按需缓存 Electron 到 `~/.hachimi-pet/runtime`（Windows 如需强制使用 Electron，也可设置环境变量 `HACHIMI_RUNTIME=electron`）
+- **macOS / Linux**：首次运行 `/25miku` 时自动定位或按需缓存 Electron 到 `~/.hachimi-pet/runtime`（Windows 如需强制使用 Electron，也可设置环境变量 `HACHIMI_RUNTIME=electron`）
 
 ---
 

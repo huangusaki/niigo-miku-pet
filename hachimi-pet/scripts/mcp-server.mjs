@@ -118,7 +118,7 @@ async function handleRequest(msg) {
             jsonrpc: '2.0',
             id,
             result: {
-              content: [{ type: 'text', text: `Desktop pet is not currently open (${err.message}). Run /hachimi to launch it.` }],
+              content: [{ type: 'text', text: `Desktop pet is not currently open (${err.message}). Run /25miku to launch it.` }],
             },
           });
         }
